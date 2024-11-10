@@ -3,10 +3,13 @@ package ru.otus.coroutines.first
 import androidx.annotation.WorkerThread
 import kotlin.random.Random
 
-class BlockingRepository {
+interface BlockingRepository {
+    fun getHeavyData()
+}
 
+internal class BlockingRepositoryImpl : BlockingRepository {
     @WorkerThread
-    fun getHeavyData() {
+    override fun getHeavyData() {
         Thread.sleep(Random.nextInt(10) * 1000L)
     }
 }
