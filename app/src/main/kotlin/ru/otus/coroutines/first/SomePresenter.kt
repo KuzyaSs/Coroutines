@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
+import ru.otus.coroutines.first.FirstResult as Result
 
 internal class SomePresenter(
     private val blockingRepository: BlockingRepository,

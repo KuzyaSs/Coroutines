@@ -8,6 +8,7 @@ import kotlinx.coroutines.newSingleThreadContext
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import ru.otus.coroutines.first.SomePresenter.Companion.GET_HEAVY_DATA_TIMEOUT
+import ru.otus.coroutines.first.FirstResult as Result
 
 @OptIn(ExperimentalCoroutinesApi::class)
 internal class SomePresenterTest {
